@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/good_night_img"
+    tools:context=".SignIn">
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/main_signin_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:text="blessing@gmail.com"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:background="@drawable/big_button_white"
+            />
+        <EditText
+            android:id="@+id/edt_password"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textSize="15sp"
+            android:inputType="textPassword"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:text="smart001"
+            android:background="@drawable/big_button_white"
+            />
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/big_button_white"
+            android:text="Sign In"
+            android:textColor="#ffffff"
+            android:layout_margin="15dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonttt"
+            />
+
+        <TextView
+            android:id="@+id/txt_sign_up_option"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Don't have Account? Sign Up"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/fonttt"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

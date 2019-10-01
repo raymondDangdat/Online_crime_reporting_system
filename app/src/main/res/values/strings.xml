@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">CRS</string>
+    <string-array name="lga">
+        <item>Select L.G.A</item>
+        <item>Barkin Ladi</item>
+        <item>Bassa</item>
+        <item>Bokkos</item>
+        <item>Jos East</item>
+        <item>Jos North</item>
+        <item>Jos South</item>
+        <item>Kanam</item>
+        <item>Kanke</item>
+        <item>Langtang North</item>
+        <item>Langtang South</item>
+        <item>Mangu</item>
+        <item>Mikang</item>
+        <item>Pankshin</item>
+        <item>QuaanPan</item>
+        <item>Riyom</item>
+        <item>Shendam</item>
+        <item>Wasse</item>
+    </string-array>
+
+    <string-array name="crimeType">
+        <item> Click to select crime type</item>
+        <item> Offence Against the Person</item>
+        <item> Violent Offence</item>
+        <item> Sexual Offence</item>
+        <item> Offence Against Property</item>
+        <item> Forgery, Personation and Cheating</item>
+        <item>Firearms and Offensive weapons</item>
+        <item> Offences against the State</item>
+        <item> Offences against the Crown/Government</item>
+        <item> Harmful or dangerous Drugs</item>
+        <item> Offences against religion and public worship</item>
+        <item> Offences Against public justice</item>
+        <item> Public order offence</item>
+        <item>Commerce, financial markets and insolvency</item>
+        <item> offences against public morals and public policy</item>
+        <item> Motor vehicle offences</item>
+        <item> Conspiracy, incitement and attempt to commit crime</item>
+        <item> Inchoate of offence</item>
+        <item> Juvenile delinquency</item>
+        <item> Victimless crime</item>
+        <item> Theft/Robbery </item>
+    </string-array>
+
+    <string name="title_activity_admin_home">CRS Admin</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_reporter_home">Online Crime Reporting System</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_reporter_home2">ReporterHome2</string>
+</resources>

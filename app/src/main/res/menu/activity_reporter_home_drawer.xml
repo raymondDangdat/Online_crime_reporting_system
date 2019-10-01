@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <!--<item-->
+            <!--android:id="@+id/nav_upload_id"-->
+            <!--android:icon="@drawable/ic_perm_identity"-->
+            <!--android:title="Upload Your Id"-->
+            <!--/>-->
+
+        <item
+            android:id="@+id/nav_report_crime"
+            android:icon="@drawable/ic_lock_outline"
+            android:title="Report Crime" />
+        <item
+            android:id="@+id/nav_track_crime_reported"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Crimes Reported" />
+        <item
+            android:id="@+id/nav_latest_crimes"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Latest Crimes Reported" />
+        <item
+            android:id="@+id/nav_report_status"
+            android:icon="@drawable/ic_lock_outline"
+            android:title="Check your report status" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/ic_exit"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

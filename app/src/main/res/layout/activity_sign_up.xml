@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_night_img"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/signup_toolbar"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/setUpImageButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:src="@drawable/images"/>
+
+
+        <EditText
+            android:id="@+id/edt_fullname"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Full Name, Surname First"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/fonttt"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/big_button_white"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select your LGA below"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/fonttt"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="15dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_lg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/fonttt"
+            android:padding="15dp"
+            android:spinnerMode="dialog"
+            android:background="@drawable/big_button_blue"
+            android:layout_margin="15dp"
+            android:outlineSpotShadowColor="#ffffff"
+            android:entries="@array/lga">
+        </Spinner>
+        <EditText
+            android:id="@+id/edt_address"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/fonttt"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="text"
+            android:background="@drawable/big_button_white"
+            />
+        <EditText
+            android:id="@+id/edt_occupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/fonttt"
+            android:padding="15dp"
+            android:hint="Occupation"
+            android:inputType="text"
+            android:background="@drawable/big_button_white"
+            />
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textColorHint="#ffffff"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/fonttt"
+            android:padding="15dp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email"
+            android:drawableEnd="@drawable/ic_mail_outline"
+            android:background="@drawable/big_button_white"
+            />
+        <!--<ImageView-->
+            <!--android:id="@+id/img_id"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/id"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:layout_gravity="center"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_upload_id"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="15dp"-->
+            <!--android:padding="15dp"-->
+            <!--android:drawableEnd="@drawable/ic_perm_identity"-->
+            <!--android:background="@drawable/big_button_white"-->
+            <!--android:text="Upload ID"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textStyle="bold"-->
+            <!--android:fontFamily="@font/fonttt"-->
+            <!--/>-->
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/big_button_blue"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textColorHint="#ffffff"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:hint="Enter Phone Number"
+            android:drawableEnd="@drawable/ic_local_phone"
+            />
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:fontFamily="@font/fonttt"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/ic_lock"
+            android:background="@drawable/big_button_white"
+            />
+        <EditText
+            android:id="@+id/edt_c_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/fonttt"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:hint="Confirm your password"
+            android:drawableEnd="@drawable/ic_lock"
+            android:background="@drawable/big_button_white"
+            />
+
+        <Button
+            android:id="@+id/btn_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="15dp"
+            android:background="@drawable/big_button_white"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:fontFamily="@font/fonttt"
+            />
+
+        <TextView
+            android:id="@+id/txt_sign_in_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Have an account already? Sign In"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/fonttt"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_night_img"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/app_bar_layout"
+            android:id="@+id/main_activity_toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Police Emergency Contacts"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/fonttt"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_lg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/fonttt"
+                android:scrollbarStyle="outsideOverlay"
+                android:padding="15dp"
+                android:layout_margin="15dp"
+                android:spinnerMode="dialog"
+                android:splitMotionEvents="true"
+                android:background="@drawable/big_button_blue"
+                android:outlineSpotShadowColor="@color/colorPrimary"
+                android:entries="@array/lga">
+            </Spinner>
+            <TextView
+                android:id="@+id/txt_report_tract_crime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="To report and track a crime?"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/fonttt"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <Button
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/big_button_white"
+                    android:text="Sign In"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"/>
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/big_button_white"
+                    android:text="Sign Up"
+                    android:padding="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
