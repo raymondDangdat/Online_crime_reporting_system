@@ -21,7 +21,7 @@ public class SignIn extends AppCompatActivity {
     private EditText editText_email;
     private EditText editText_password;
     private Button button_sing_in;
-    private TextView txt_sign_up_option;
+    private TextView txt_sign_up_option, txt_forgot_password;
 
     private ProgressDialog loginProgress;
 
@@ -54,6 +54,7 @@ public class SignIn extends AppCompatActivity {
         editText_password = findViewById(R.id.edt_password);
         button_sing_in = findViewById(R.id.btn_sign_in);
         txt_sign_up_option = findViewById(R.id.txt_sign_up_option);
+        txt_forgot_password = findViewById(R.id.txt_forgotten_password);
 
 
 
@@ -68,6 +69,12 @@ public class SignIn extends AppCompatActivity {
             public void onClick(View v) {
                 loginUser();
 
+            }
+        });
+        txt_forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SignIn.this, ForgotPassword.class));
             }
         });
     }

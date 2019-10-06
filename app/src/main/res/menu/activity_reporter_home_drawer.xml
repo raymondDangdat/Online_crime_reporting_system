@@ -24,9 +24,13 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Latest Crimes Reported" />
         <item
-            android:id="@+id/nav_report_status"
-            android:icon="@drawable/ic_lock_outline"
-            android:title="Check your report status" />
+            android:id="@+id/nav_camera_capture"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Capture scene on camera" />
+        <item
+            android:id="@+id/nav_police_emc"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Police Emergency Contacts" />
 
     </group>
 

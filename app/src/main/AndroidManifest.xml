@@ -4,12 +4,15 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -51,8 +54,27 @@
         <activity
             android:name=".CrimeReported"
             android:parentActivityName=".ReporterHome" />
-        <activity android:name=".CrimeReportedDetail"
-            android:parentActivityName=".CrimeReported"/>
+        <activity
+            android:name=".CrimeReportedDetail"
+            android:parentActivityName=".CrimeReported" />
+        <activity
+            android:name=".ACrimeReportedDetail"
+            android:parentActivityName=".AdminHome" />
+        <activity android:name=".CameraCapture" />
+        <activity
+            android:name=".ApprovedReporters"
+            android:parentActivityName=".AdminHome" />
+        <activity
+            android:name=".AdminCrimesReported"
+            android:parentActivityName=".AdminHome" />
+        <activity
+            android:name=".ManageEmergencyContacts"
+            android:parentActivityName=".AdminHome" />
+        <activity
+            android:name=".ForgotPassword"
+            android:parentActivityName=".SignIn" />
+        <activity android:name=".PoliceEmergencyContacts"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

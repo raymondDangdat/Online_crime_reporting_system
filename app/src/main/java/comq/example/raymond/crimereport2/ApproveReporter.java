@@ -81,8 +81,8 @@ public class ApproveReporter extends AppCompatActivity {
         adapter = new FirebaseRecyclerAdapter<ApproveModel, ApproveReporterViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull ApproveReporterViewHolder holder, int position, @NonNull ApproveModel model) {
-                holder.txtLg.setText(model.getLg());
-                holder.txtname.setText(model.getName());
+                holder.txtLg.setText("LGA: " + model.getLg());
+                holder.txtname.setText("Name: "+model.getName());
 
                 holder.setItemClickListener(new ItemClickListener() {
                     @Override

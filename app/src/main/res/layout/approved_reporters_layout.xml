@@ -19,7 +19,17 @@
             android:text="Joseph Gyang Dalyop"
             android:fontFamily="@font/fonttt"
             android:textStyle="bold"
+            android:layout_margin="6dp"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Riyom"
+            android:textStyle="bold"
+            android:layout_margin="6dp"
+            android:textSize="18sp"/>
         <TextView
             android:id="@+id/reporter_lg"
             android:layout_width="match_parent"
@@ -27,6 +37,7 @@
             android:text="Riyom"
             android:fontFamily="@font/fonttt"
             android:textStyle="bold"
+            android:layout_margin="6dp"
             android:textSize="18sp"/>
 
     </LinearLayout>

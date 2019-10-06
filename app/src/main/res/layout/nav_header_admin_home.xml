@@ -24,7 +24,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:padding="10dp"
-        android:src="@drawable/images"/>
+        android:src="@drawable/logo"/>
 
     <TextView
         android:layout_width="match_parent"

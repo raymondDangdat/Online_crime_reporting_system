@@ -9,6 +9,22 @@
             android:icon="@drawable/ic_person_add"
             android:title="Approve Reporter" />
 
+        <item
+            android:id="@+id/nav_approved_reporters"
+            android:icon="@drawable/ic_person_add"
+            android:title="Approved Reporters" />
+        <item
+            android:id="@+id/nav_crimes_reported"
+            android:icon="@drawable/ic_person_add"
+            android:title="Crimes Reported" />
+
+        <item
+            android:id="@+id/nav_add_emergency_number"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="Manage Emergency Contact " />
+
+
+
     </group>
 
     <item android:title="">

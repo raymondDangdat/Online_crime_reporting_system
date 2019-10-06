@@ -31,7 +31,7 @@ public class ApproveReporterDetails extends AppCompatActivity {
     private DatabaseReference mDatabaseUsers;
 
     private CircleImageView imgProfilePic;
-    private TextView txtName, txtLg, txtAddress;
+    private TextView txtName, txtLg, txtAddress, txtOccupation, txtPhone, txtEmail;
     private ImageView img_id;
     private Button btnAccept, btnDecline;
 
@@ -59,6 +59,9 @@ public class ApproveReporterDetails extends AppCompatActivity {
         txtAddress = findViewById(R.id.txt_address);
         txtName = findViewById(R.id.txt_fullname);
         txtLg = findViewById(R.id.txt_lg);
+        txtOccupation = findViewById(R.id.txt_occupation);
+        txtEmail = findViewById(R.id.txt_email);
+        txtPhone = findViewById(R.id.txt_phone);
 
 
 
@@ -118,11 +121,26 @@ public class ApproveReporterDetails extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 ApproveModel approveModel = dataSnapshot.getValue(ApproveModel.class);
-                txtAddress.setText(approveModel.getAddress());
-                txtLg.setText(approveModel.getLg());
-                txtName.setText(approveModel.getName());
+                txtAddress.setText("Address: " + approveModel.getAddress());
+                txtLg.setText("LGA: " + approveModel.getLg());
+                txtName.setText("Name: "+ approveModel.getName());
                 Picasso.get().load(approveModel.getImg_id()).into(img_id);
                 Picasso.get().load(approveModel.getProfilePic()).into(imgProfilePic);
+                String status = approveModel.getStatus().toString();
+                txtEmail.setText("Email: " + approveModel.getEmail());
+                txtPhone.setText("Phone Number: " + approveModel.getPhone());
+                txtOccupation.setText("Occupation: " + approveModel.getOccupation());
+                if (status.equals("YES")){
+                    btnDecline.setText("REMOVE");
+                    btnAccept.setText("Approved");
+                    btnAccept.setEnabled(false);
+                    btnDecline.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            declineReporter();
+                        }
+                    });
+                }
             }
 
             @Override

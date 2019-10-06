@@ -13,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -21,11 +23,17 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ReporterHome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private FirebaseAuth mAuth;
+
+    private TextView txtFullname;
+    private CircleImageView profilePic;
 
     private String uId = "";
     private DatabaseReference mDatabaseUsers, mDatabaseCrimes;
@@ -52,8 +60,29 @@ public class ReporterHome extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        final NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        mDatabaseUsers.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                View headerView = navigationView.getHeaderView(0);
+                txtFullname = headerView.findViewById(R.id.txt_fullname);
+                profilePic = headerView.findViewById(R.id.profile_pix);
+
+                String fullname = dataSnapshot.child(uId).child("name").getValue(String.class);
+                String profilePicture = dataSnapshot.child(uId).child("profilePic").getValue(String.class);
+
+                //set text
+                txtFullname.setText(fullname);
+                Picasso.get().load(profilePicture).into(profilePic);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 
     @Override
@@ -133,6 +162,10 @@ public class ReporterHome extends AppCompatActivity
             startActivity(signoutIntent);
             finish();
 
+        }else if (id == R.id.nav_camera_capture){
+            startActivity(new Intent(ReporterHome.this, CameraCapture.class));
+        }else if (id == R.id.nav_police_emc){
+            startActivity(new Intent(ReporterHome.this, PoliceEmergencyContacts.class));
         }
 //        else if (id == R.id.nav_upload_id){
 //            startActivity(new Intent(ReporterHome.this, UploadId.class));

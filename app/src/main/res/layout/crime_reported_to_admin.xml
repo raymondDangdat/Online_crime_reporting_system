@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_margin="10dp">
+        android:layout_margin="4dp">
 
         <TextView
             android:id="@+id/crime_type"
@@ -17,6 +17,27 @@
             android:layout_height="wrap_content"
             android:text="Rape"
             android:fontFamily="@font/fonttt"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/crime_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rape"
+            android:fontFamily="@font/fonttt"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/reporter_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="09095355158"
             android:textStyle="bold"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:maxLines="1"

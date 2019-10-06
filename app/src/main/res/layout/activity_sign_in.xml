@@ -26,10 +26,10 @@
             android:textColor="#ffffff"
             android:inputType="textEmailAddress"
             android:padding="15dp"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:layout_margin="15dp"
             android:layout_width="match_parent"
-            android:text="blessing@gmail.com"
+            android:text="ocrsadmin@gmail.com"
             android:layout_height="wrap_content"
             android:hint="Enter Email"
             android:background="@drawable/big_button_white"
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Password"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:inputType="textPassword"
             android:layout_margin="15dp"
             android:padding="15dp"
@@ -58,9 +58,25 @@
             android:layout_margin="15dp"
             android:textAlignment="center"
             android:textSize="20sp"
+            android:textAllCaps="false"
             android:textStyle="bold"
             android:fontFamily="@font/fonttt"
             />
+
+        <TextView
+            android:id="@+id/txt_forgotten_password"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password? "
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/fonttt"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            />
+
 
         <TextView
             android:id="@+id/txt_sign_up_option"
@@ -73,7 +89,6 @@
             android:fontFamily="@font/fonttt"
             android:textSize="20sp"
             android:textStyle="bold"
-
             android:textAlignment="center"
             />
 

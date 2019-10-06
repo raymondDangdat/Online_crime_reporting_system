@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnSignUp;
     private Button btnSignIn;
+    private Button btnEmergencyContacts;
 
     //toolbar
     private android.support.v7.widget.Toolbar main_activity_toolbar;
@@ -27,6 +28,15 @@ public class MainActivity extends AppCompatActivity {
 
         btnSignUp = findViewById(R.id.btn_sign_up);
         btnSignIn = findViewById(R.id.btn_sign_in);
+        btnEmergencyContacts = findViewById(R.id.btn_emergency_numbers);
+
+
+        btnEmergencyContacts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PoliceEmergencyContacts.class));
+            }
+        });
 
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
