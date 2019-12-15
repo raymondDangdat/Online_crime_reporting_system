@@ -39,7 +39,7 @@ public class AdminHome extends AppCompatActivity
     private FirebaseAuth mAuth;
 
     private DatabaseReference mDatabaseCrimes;
-    //add new chalet layout
+
     private MaterialEditText editTextChaletNumber;
 
     private FirebaseRecyclerAdapter<ReportModel, CrimesReportedViewHolder> adapter;

@@ -159,7 +159,7 @@ public class SignUp extends AppCompatActivity {
 
         //check for emptiness
         if (!TextUtils.isEmpty(fullName) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(lg)
-                && !TextUtils.isEmpty(address) && !TextUtils.isEmpty(occupation) && !TextUtils.isEmpty(phone)
+                && !TextUtils.isEmpty(address)  && !TextUtils.isEmpty(phone)
                 && !TextUtils.isEmpty(location) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(cPassword)  && mImageUri != null){
             if (password.equals(cPassword)){
                 mProgress.show();

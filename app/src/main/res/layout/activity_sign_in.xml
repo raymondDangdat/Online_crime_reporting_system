@@ -29,7 +29,6 @@
             android:textSize="20sp"
             android:layout_margin="15dp"
             android:layout_width="match_parent"
-            android:text="ocrsadmin@gmail.com"
             android:layout_height="wrap_content"
             android:hint="Enter Email"
             android:background="@drawable/big_button_white"
@@ -45,7 +44,6 @@
             android:inputType="textPassword"
             android:layout_margin="15dp"
             android:padding="15dp"
-            android:text="smart001"
             android:background="@drawable/big_button_white"
             />
         <Button

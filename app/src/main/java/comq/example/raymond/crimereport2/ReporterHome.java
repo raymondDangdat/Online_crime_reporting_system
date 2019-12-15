@@ -149,8 +149,6 @@ public class ReporterHome extends AppCompatActivity
         } else if (id == R.id.nav_track_crime_reported) {
             startActivity(new Intent(ReporterHome.this, CrimeReported.class));
 
-        } else if (id == R.id.nav_latest_crimes) {
-
         } else if (id == R.id.nav_settings) {
 
         } else if (id == R.id.nav_sign_out) {
@@ -161,10 +159,7 @@ public class ReporterHome extends AppCompatActivity
             signoutIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(signoutIntent);
             finish();
-
-        }else if (id == R.id.nav_camera_capture){
-            startActivity(new Intent(ReporterHome.this, CameraCapture.class));
-        }else if (id == R.id.nav_police_emc){
+        } else if (id == R.id.nav_police_emc){
             startActivity(new Intent(ReporterHome.this, PoliceEmergencyContacts.class));
         }
 //        else if (id == R.id.nav_upload_id){

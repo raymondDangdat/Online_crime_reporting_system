@@ -104,7 +104,7 @@ public class ACrimeReportedDetail extends AppCompatActivity {
 
 
 
-        //get room id from Intent
+        //get crime id from Intent
         if (getIntent() != null){
             crimeId = getIntent().getStringExtra("crimeId");
 
@@ -176,7 +176,7 @@ public class ACrimeReportedDetail extends AppCompatActivity {
                 txtCrimeType.setText("Crime Type: "+ reportModel.getCrimeType());
                 txtDateReported.setText("Date Reported: "+ ReportUtils.dateFromLong(reportModel.getReportDate()));
                 txtCrimeDescription.setText("Crime Description: "+ reportModel.getCrimeDescription());
-                txtReporterPhone.setText("Phone: " + reportModel.getReporterPhone());
+                txtReporterPhone.setText("Call Reporter: " + reportModel.getReporterPhone());
                 String img_url = reportModel.getCrimeScene().toString();
 
                 //make call

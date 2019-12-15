@@ -19,14 +19,14 @@
             android:id="@+id/nav_track_crime_reported"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Crimes Reported" />
-        <item
-            android:id="@+id/nav_latest_crimes"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Latest Crimes Reported" />
-        <item
-            android:id="@+id/nav_camera_capture"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Capture scene on camera" />
+        <!--<item-->
+            <!--android:id="@+id/nav_latest_crimes"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Latest Crimes Reported" />-->
+        <!--&lt;!&ndash;<item&ndash;&gt;-->
+            <!--android:id="@+id/nav_camera_capture"-->
+            <!--android:icon="@drawable/ic_menu_camera"-->
+            <!--android:title="Capture scene on camera" />-->
         <item
             android:id="@+id/nav_police_emc"
             android:icon="@drawable/ic_menu_camera"
